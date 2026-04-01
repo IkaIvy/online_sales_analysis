@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+config.json
+screenshots/
+*.png
+*.jpg
+*.jpeg
