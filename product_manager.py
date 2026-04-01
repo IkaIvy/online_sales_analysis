@@ -21,3 +21,11 @@ class ProductManager:
         for product in self.products:
             total_value += product.price * product.quantity
         return total_value
+
+    def remove_product_by_name(self, name):
+        for product in self.products:
+            if product.name.lower() == name.lower():
+                self.products.remove(product)
+                print(f"Product '{name}' removed successfully.")
+                return
+        print(f"Product '{name}' not found.")
